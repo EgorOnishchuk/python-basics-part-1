@@ -21,8 +21,6 @@
 Ноль, который мы убрали, называется ведущим.
 """
 
-print('Задача 4. Число наоборот')
-
 
 def remove_leading_zeros(number: str) -> str:
     """
@@ -44,6 +42,8 @@ def reverse_number(number: int) -> int:
     return int(remove_leading_zeros(str(number)[::-1]))
 
 
-while (user_number := int(input('Введите число: '))) != 0:
-    print(f'Число наоборот: {reverse_number(user_number)}.')
-print('Программа завершена!')
+if __name__ == "__main__":
+    print("Задача 4. Число наоборот")
+    while (user_number := int(input("Введите число: "))) != 0:
+        print(f"Число наоборот: {reverse_number(user_number)}.")
+    print("Программа завершена!")
